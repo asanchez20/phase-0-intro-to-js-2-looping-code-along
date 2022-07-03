@@ -1,17 +1,16 @@
-
-names = [];
-eventName = "";
-
-function writeCards(names, eventName){
-    for(let i = 0; i < names.length; i++){
-    console.log(`Thank you, ${names[i]}, for the wonderful ${eventName} gift!`);
+const named = []
+const eventName = ""
+function writeCards(name,eventName){
+    for(let i = 0; i < name.length; i++){
+        named.push(`Thank you, ${name[i]}, for the wonderful ${eventName} gift!`)
     }
+    return named
+}
+let number = ""
+function countDown (number){
+while (number >= 0){
+    console.log(number--)
+}
 }
 
-let number = 10;
-function countDown(number){
-while (countDown < 10) {
-    console.log(countDown--)
-}
-}
-countDown(10)
+countDown(5)
